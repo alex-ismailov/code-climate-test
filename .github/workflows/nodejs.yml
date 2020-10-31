@@ -1,0 +1,26 @@
+name: Github-Actions
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  testing:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+    
+    steps:
+      - name: got clone code-climate-test repository
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: make install
+      - name: Run linter
+        run: make lint
