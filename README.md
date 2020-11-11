@@ -1,6 +1,6 @@
 # Code climate test
 
-![tiranozavr](https://github.com/alex-ismailov/git-imgs/blob/master/tiranozavr-left-right.png)
+![tiranozavr](https://github.com/alex-ismailov/git-imgs/blob/master/tiranozavr-left-right-without-bg.png)
 
 [![Github-Actions](https://github.com/alex-ismailov/code-climate-test/workflows/Github-Actions/badge.svg)](https://github.com/alex-ismailov/code-climate-test/actions)
 
